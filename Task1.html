@@ -1,64 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Amazing Destinations</title>
+    <title>Starbucks Landing pages</title>
     <link rel="stylesheet" href="task1.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+   <section>
+    <div class="circle"></div>
+     <header>
+        <a href="#"><img src="./logo.png" class="logo"></a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">What's New</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
 
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to Our Travel Paradise</h1>
-            <p>Discover amazing destinations and plan your dream vacation.</p>
-            <a href="#destinations" class="cta-button">Explore Destinations</a>
+     </header>
+     <div class="content">
+        <div class="textBox">
+            <h2>It's not just a Coffee<br>It's<span>  Starbucks</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quasi obcaecati dolorum, mollitia quos hic quia assumenda doloribus earum veritatis harum laudantium dolore doloremque iusto tempore minima non itaque voluptatem?
+
+            </p>
+            <a href="#">Learn More</a>
         </div>
-    </section>
-
-    <section id="destinations">
-        <div class="destination">
-            <img src="destination1.jpg" alt="Destination 1">
-            <h2>Beach Paradise</h2>
-            <p>Relax on pristine beaches with crystal clear waters.</p>
-            <a href="#book" class="cta-button">Book Now</a>
+        <div class="imgBox">
+            <img src="./img1.png" class="starbucks">
+            
         </div>
+     </div>
+     <u1 class="thumb">
+        <li><a href="#"> <img src="./thumb1.png" onclick="imgSlider('./img1.png'); changeCircleColor('#017143')"></a></li>
+        <li><a href="#"> <img src="./thumb2.png" onclick="imgSlider('./img2.png'); changeCircleColor('#eb7495')"></a></li>
+        <li><a href="#"> <img src="./thumb3.png"  onclick="imgSlider('./img3.png'); changeCircleColor('#FF69B4')" ></a></li>
+     </u1>
+     <ul class="sci">
 
-        <div class="destination">
-            <img src="destination2.jpg" alt="Destination 2">
-            <h2>Mountain Adventure</h2>
-            <p>Embark on thrilling hikes in breathtaking mountain landscapes.</p>
-            <a href="#book" class="cta-button">Book Now</a>
-        </div>
-    </section>
+     <li><a href="#"><img src="./facebook.png"> </a></li>
+     <li><a href="#"><img src="./twitter.png"> </a></li>
+     <li><a href="#"><img src="./instagram.png"> </a></li></ul>
+   </section> 
+   <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
 
-    <section id="about">
-        <div class="about">
-            <h2>About Us</h2>
-            <p>We are passionate about travel and creating unforgettable experiences for our clients.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or inquiries, please feel free to contact us.</p>
-            <a href="mailto:info@example.com" class="cta-button">Email Us</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Explore Amazing Destinations</p>
-    </footer>
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+        }
+   </script>
 </body>
 </html>
